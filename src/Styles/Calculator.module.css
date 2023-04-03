@@ -1,0 +1,99 @@
+/* css module styling in react */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* class selector */
+.container {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  border: 10px solid #101116;
+  background: #101116;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0), 0 6px 20px 0 rgb(0 0 0);
+}
+
+/* class selector */
+.heading {
+  color: #101116;
+  text-shadow: 2px 2px 4px #56cbdb;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+/* class selector */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* class selector */
+.input {
+  height: 90px;
+  width: 390px;
+  background-color: #101116;
+  border: 0px;
+  color: #ffffff;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Id selector */
+#clear {
+  grid-column: 1/3;
+  grid-row: 1;
+  color: rgb(7, 7, 7);
+}
+
+/* Id selector */
+#result {
+  grid-column: 3/5;
+  grid-row: 5;
+  color: rgb(0, 0, 0);
+}
+
+/* Id selector */
+#backspace {
+  color: rgb(0, 0, 0);
+}
+
+/* Button selector */
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #58f80e;
+  color: rgb(8, 8, 8);
+  font-weight: 500;
+}
+
+/* class selector */
+.highlight {
+  background: #56cbdb;
+}
+
+/* class selector */
+.loader {
+  position: absolute;
+  top: 35%;
+  right: 45%;
+}
